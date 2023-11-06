@@ -169,7 +169,7 @@ public double[] archivoAdouble(String name){
     }
     catch (Exception e) {
         System.out.println("Error al abrir /leer archivo: " + e.toString());
-    }
+        }
     return arreglo;
-}
+    }
 }
