@@ -24,6 +24,7 @@ public class InsertionSort {
             String[] arreglo = arch.archivoAstrings(filename);
         } else if (tipoArreglo.equals("double")) {
             double[] arreglo = arch.archivoAdouble(filename);
+            insertionSort(arreglo);
         } else {
             System.out.println("Tipo de arreglo no reconocido. ");
         }
@@ -41,6 +42,20 @@ public class InsertionSort {
                 j = j-1;
             }
             arreglo[j +1] = key;
+        }
+    }
+
+    public static void insertionSort(double[] arreglo){
+        for (int i = 1; i < arreglo.length; i++){
+            double key = arreglo[i];
+            int j = i-1;
+
+            // Mover los arreglos a una posición adelante
+            while (j >= 0 && arreglo[j] > key) {
+                arreglo[j + 1] = arreglo[j];
+                j = j - 1;
+            }
+            arreglo[j + 1] = key;
         }
     }
 }
