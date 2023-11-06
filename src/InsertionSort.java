@@ -12,9 +12,16 @@ public class InsertionSort {
         String tipoArreglo = bufer.readLine();
 
         System.out.println("Ingresa el nombre del archivo");
-        filename = bufer.readLine();
+        filename = bufer.readLine();        
 
-        
-
+        if (tipoArreglo.equals("int")) {
+            int[] arreglo = arch.archivoAint(filename);
+        } else if (tipoArreglo.equals("string")) {
+            String[] arreglo = arch.archivoAstrings(filename);
+        } else if (tipoArreglo.equals("double")) {
+            double[] arreglo = arch.archivoAdouble(filename);
+        } else {
+            System.out.println("Tipo de arreglo no reconocido ");
+        }
     }
 }
