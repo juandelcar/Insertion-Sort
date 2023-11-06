@@ -146,4 +146,30 @@ public class Files {
         }
     } 
 
+public double[] archivoAdouble(String name){
+    File archivo;
+    FileReader reader;
+    BufferedReader bufer;
+    String linea;
+    double [] arreglo = null;
+    int t;
+    int i = 0;
+
+    try{
+        t = contarLineas(name);
+        arreglo = new double [t];
+        archivo = new File("D:\\archivos\\" + name + ".txt");
+        reader = new FileReader(archivo);
+        bufer = new BufferedReader(reader);
+        while(( linea = bufer.readLine()) != null){
+            arreglo[i] = Double.parseDouble(linea);
+            i++;
+        }
+        reader.close();
+    }
+    catch (Exception e) {
+        System.out.println("Error al abrir /leer archivo: " + e.toString());
+    }
+    return arreglo;
+}
 }
