@@ -14,24 +14,52 @@ public class InsertionSort {
         System.out.println("Ingresa el nombre del archivo: ");
         filename = bufer.readLine();        
 
+        Object arreglo = null;
+
         if (tipoArreglo.equals("int")) {
-            int[] arreglo = arch.archivoAint(filename);
-            insertionSort(arreglo);
+            arreglo = arch.archivoAint(filename);
+            insertionSort((int[]) arreglo);
         } else if (tipoArreglo.equals("string")) {
-            String[] arreglo = arch.archivoAstrings(filename);
-            insertionSort(arreglo);
+            arreglo = arch.archivoAstrings(filename);
+            insertionSort((String[]) arreglo);
         } else if (tipoArreglo.equals("double")) {
-            double[] arreglo = arch.archivoAdouble(filename);
-            insertionSort(arreglo);
+            arreglo = arch.archivoAdouble(filename);
+            insertionSort((double[]) arreglo);
         } else {
             System.out.println("Tipo de arreglo no reconocido. ");
         }
 
         System.out.println("¿Deseas Guardar el arreglo en un archivo o mostrarlo en pantalla? : (archivo/pantalla) ");
         String opcion  = bufer.readLine();
-        
 
-    }
+        if (opcion.equals("archivo")) {
+            System.out.println("Ingresa el nombre del archivo donde se guardará el arreglo ordenado: ");
+            String nombreArchivo = bufer.readLine();
+            if (arreglo instanceof int[]) {
+                arch.arregloArchivo(nombreArchivo, (int[]) arreglo);
+            } else if (arreglo instanceof String[]) {
+                arch.arregloArchivo(nombreArchivo, (String[]) arreglo);
+            } else if (arreglo instanceof double[]) {
+                arch.arregloArchivo(nombreArchivo, (double[]) arreglo);
+            }
+        } else if (opcion.equals("pantalla")) {
+            if (arreglo instanceof int[]) {
+                for (int i : (int[]) arreglo) {
+                    System.out.println(i);
+                }
+            } else if (arreglo instanceof String[]) {
+                for (String s : (String[]) arreglo) {
+                    System.out.println(s);
+                }
+            } else if (arreglo instanceof double[]) {
+                for (double d : (double[]) arreglo) {
+                    System.out.println(d);
+                }
+            }
+        } else {
+            System.out.println("Opción no reconocida. ");
+        }
+    }   
 
     public static void insertionSort(int[] arreglo) {
         for (int i= 1 ; i < arreglo.length; i++) {

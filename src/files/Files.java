@@ -172,4 +172,38 @@ public double[] archivoAdouble(String name){
         }
     return arreglo;
     }
+
+
+    public void arregloArchivo(String name, String[] array){
+        FileWriter archivo;
+        PrintWriter writer;
+    
+        try{
+            archivo = new FileWriter("D:\\archivos\\" + name + ".txt");
+            writer = new PrintWriter(archivo);
+            for(String unDato : array) {
+                writer.println(unDato);
+            }
+            archivo.close();
+        } catch (Exception e){
+            System.out.println("Error al crear el archivo: " + e.toString());
+        }
+    }
+
+
+    public void arregloArchivo(String name, double[] array){
+        FileWriter archivo;
+        PrintWriter writer;
+    
+        try{
+            archivo = new FileWriter("D:\\archivos\\" + name + ".txt");
+            writer = new PrintWriter(archivo);
+            for(double unDato : array) {
+                writer.println(unDato);
+            }
+            archivo.close();
+        } catch (Exception e){
+            System.out.println("Error al crear el archivo: " + e.toString());
+        }
+    }
 }
