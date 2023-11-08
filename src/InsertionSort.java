@@ -1,3 +1,28 @@
+/*
+ * Copyright (c) [2023] [Juan Del Carmen Ramirez]
+ * 
+ * Permiso otorgado a cualquier persona que obtenga una copia de este software y 
+ * archivos de documentación asociados (el "Software"), para tratar el Software 
+ * sin restricción, incluidos, entre otros, los derechos de uso, copia, 
+ * modificación, fusión, publicación, distribución, sublicencia y/o venta de 
+ * copias del Software, y para permitir a las personas a las que se les proporcione 
+ * el Software a hacerlo, con sujeción a las siguientes condiciones:
+ * 
+ * El anterior aviso de derechos de autor y este permiso serán incluidos en 
+ * todos los avisos y/o copias sustanciales del Software.
+ * 
+ * EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O 
+ * IMPLÍCITA, INCLUYENDO, PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIALIZACIÓN, 
+ * IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS 
+ * AUTORES O TITULARES DE DERECHOS DE AUTOR SERÁN RESPONSABLES DE CUALQUIER 
+ * RECLAMACIÓN, DAÑOS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCIÓN DE CONTRATO, 
+ * AGRAVIO O DE OTRA MANERA, DERIVADAS DE, FUERA DE O EN RELACIÓN CON EL SOFTWARE 
+ * O EL USO U OTRAS NEGOCIACIONES EN EL SOFTWARE.
+ */
+
+
+
+
 import files.Files;
 import java.io.BufferedReader;
 import java.io.IOException;
