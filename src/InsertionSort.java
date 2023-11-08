@@ -61,7 +61,7 @@ public class InsertionSort {
         }
     }   
 
-    public static void insertionSort(int[] arreglo) {
+    public static int[] insertionSort(int[] arreglo) {
         for (int i= 1 ; i < arreglo.length; i++) {
             int key = arreglo[i];
             int j = i -1;
@@ -73,9 +73,10 @@ public class InsertionSort {
             }
             arreglo[j +1] = key;
         }
+        return arreglo;
     }
 
-    public static void insertionSort(double[] arreglo){
+    public static double[] insertionSort(double[] arreglo){
         for (int i = 1; i < arreglo.length; i++){
             double key = arreglo[i];
             int j = i-1;
@@ -87,9 +88,10 @@ public class InsertionSort {
             }
             arreglo[j + 1] = key;
         }
+        return arreglo;
     }
 
-    public static void insertionSort(String[] arreglo) {
+    public static String[] insertionSort(String[] arreglo) {
         for (int i = 1; i < arreglo.length; i++){
             String key = arreglo[i];
             int j = i - 1;
@@ -101,5 +103,6 @@ public class InsertionSort {
             }
             arreglo[j + 1] = key;
         }
+        return arreglo;
     }
 }
