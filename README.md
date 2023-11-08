@@ -57,4 +57,4 @@ Si el tipo de arreglo ingresado no es reconocido (no es int, string o double), e
 Si la opción ingresada para guardar o mostrar el arreglo no es reconocida (ni "archivo" ni "pantalla"), el programa mostrará un mensaje de error.
 
 Autor
-Este programa fue desarrollado por JUAN DEL Carmen Ramirez.
+Este programa fue desarrollado por Juan Del Carmen Ramirez.

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) [2023] [Juan Del Carmen Ramirez]
+ * Copyright (c) [2023] [Juan Del Carmen]
  * 
  * Permiso otorgado a cualquier persona que obtenga una copia de este software y 
  * archivos de documentación asociados (el "Software"), para tratar el Software 
