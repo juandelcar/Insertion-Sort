@@ -1,18 +1,36 @@
-## Getting Started
+Insertion Sort
+Este es un programa en Java que implementa el algoritmo de ordenamiento por inserción para ordenar arreglos de elementos de tipo entero (int), de tipo cadena (String) y de tipo punto flotante (double). El programa te permite ingresar un arreglo desde un archivo, ordenarlo y luego elegir si deseas guardar el arreglo ordenado en un archivo o mostrarlo en pantalla.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Uso
+Ejecuta el programa InsertionSort.java desde tu entorno de desarrollo Java o utilizando la línea de comandos.
 
-## Folder Structure
+El programa te pedirá que ingreses el tipo de arreglo que deseas ordenar (int, string o double).
 
-The workspace contains two folders by default, where:
+A continuación, ingresa el nombre del archivo que contiene el arreglo que deseas ordenar. Asegúrate de que el archivo esté en el mismo directorio que el programa o proporciona la ruta completa al archivo.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+El programa leerá el archivo y realizará el ordenamiento por inserción en el arreglo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Después de ordenar el arreglo, tendrás la opción de guardar el arreglo ordenado en un archivo o mostrarlo en pantalla.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Si eliges "archivo", el programa te pedirá que ingreses un nombre para el archivo donde se guardará el arreglo ordenado.
 
-## Dependency Management
+Si eliges "pantalla", el arreglo ordenado se mostrará en la consola.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+El programa identificará automáticamente el tipo de datos del arreglo (int, string o double) y realizará el proceso correspondiente.
+
+Funciones
+insertionSort(int[] arreglo): Implementa el algoritmo de ordenamiento por inserción para arreglos de enteros.
+insertionSort(double[] arreglo): Implementa el algoritmo de ordenamiento por inserción para arreglos de punto flotante.
+insertionSort(String[] arreglo): Implementa el algoritmo de ordenamiento por inserción para arreglos de cadenas
+
+Requisitos
+Debes tener Java instalado en tu sistema.
+Los archivos de entrada deben estar en el mismo directorio que el programa o proporcionar la ruta completa al archivo.
+Debes tener la libreria Files con todos los metodos necesarios para su ejecución.
+
+Notas
+Si el tipo de arreglo ingresado no es reconocido (no es int, string o double), el programa mostrará un mensaje de error.
+Si la opción ingresada para guardar o mostrar el arreglo no es reconocida (ni "archivo" ni "pantalla"), el programa mostrará un mensaje de error.
+
+Autor
+Este programa fue desarrollado por JUAN DEL Carmen Ramirez.
